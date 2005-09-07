@@ -15,10 +15,11 @@ URL:		http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
 BuildRequires:	autoconf >= 2.59
 BuildRequires:	automake
 BuildRequires:	cgilibc-devel
+BuildRequires:	gd-devel
+BuildRequires:	openssl-devel
 BuildRequires:	php4-devel
 BuildRequires:	rpmbuild(macros) >= 1.230
 BuildRequires:	rrdtool-devel
-BuildRequires:	gd-devel
 Requires(post,preun):	php4-common
 Requires:	%{_sysconfdir}/conf.d
 %requires_eq_to php4-common php4-devel
@@ -77,6 +78,6 @@ fi
 %files
 %defattr(644,root,root,755)
 %doc contrib/php4/USAGE
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/conf.d/%{_modname}.ini
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/conf.d/%{_modname}.ini
 %attr(755,root,root) %{extensionsdir}/%{_modname}.so
 %{_examplesdir}/%{name}-%{version}
