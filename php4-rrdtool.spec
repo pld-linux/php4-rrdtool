@@ -12,11 +12,9 @@ Source0:	http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/rrdtool-1.0.x/rr
 # Source0-md5:	c466e2e7df95fa8e318e46437da87686
 Patch0:		rrdtool-php-config.patch
 URL:		http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/
-BuildRequires:	autoconf >= 2.59
-BuildRequires:	automake
 BuildRequires:	cgilibc-devel
 BuildRequires:	gd-devel
-BuildRequires:	openssl-devel
+BuildRequires:	openssl-devel >= 0.9.5
 BuildRequires:	php4-devel
 BuildRequires:	rpmbuild(macros) >= 1.230
 BuildRequires:	rrdtool-devel
@@ -38,9 +36,7 @@ Modu³ RRDtool dla PHP.
 
 %build
 cd contrib/php4
-%{__libtoolize}
-%{__aclocal}
-%{__autoconf}
+phpize
 %configure \
 	--with-openssl \
 	--includedir="%{_includedir}/php"
