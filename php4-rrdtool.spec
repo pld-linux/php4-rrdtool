@@ -18,9 +18,8 @@ BuildRequires:	openssl-devel >= 0.9.5
 BuildRequires:	php4-devel
 BuildRequires:	rpmbuild(macros) >= 1.230
 BuildRequires:	rrdtool-devel
-Requires(post,preun):	php4-common
-Requires:	%{_sysconfdir}/conf.d
 %requires_eq_to php4-common php4-devel
+Requires:	%{_sysconfdir}/conf.d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
