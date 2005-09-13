@@ -16,9 +16,9 @@ BuildRequires:	cgilibc-devel
 BuildRequires:	gd-devel
 BuildRequires:	openssl-devel >= 0.9.5
 BuildRequires:	php4-devel
-BuildRequires:	rpmbuild(macros) >= 1.230
+BuildRequires:	rpmbuild(macros) >= 1.238
 BuildRequires:	rrdtool-devel
-%requires_eq_to php4-common php4-devel
+%requires_php_extension
 Requires:	%{_sysconfdir}/conf.d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
