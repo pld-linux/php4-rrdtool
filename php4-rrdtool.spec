@@ -5,7 +5,7 @@ Summary:	RRDtool PHP module
 Summary(pl):	Modu³ PHP RRDtool
 Name:		php4-rrdtool
 Version:	1.0.50
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/Databases
 Source0:	http://people.ee.ethz.ch/~oetiker/webtools/rrdtool/pub/rrdtool-1.0.x/rrdtool-%{version}.tar.gz
@@ -17,7 +17,7 @@ BuildRequires:	gd-devel
 BuildRequires:	openssl-devel >= 0.9.5
 BuildRequires:	php4-devel
 BuildRequires:	rpmbuild(macros) >= 1.238
-BuildRequires:	rrdtool-devel
+BuildRequires:	rrdtool-devel >= 1.2.10
 %{?requires_php_extension}
 Requires:	%{_sysconfdir}/conf.d
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
