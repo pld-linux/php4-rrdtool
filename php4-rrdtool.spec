@@ -2,7 +2,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	RRDtool PHP module
-Summary(pl):	Modu≥ PHP RRDtool
+Summary(pl.UTF-8):   Modu≈Ç PHP RRDtool
 Name:		php4-rrdtool
 Version:	1.0.50
 Release:	7
@@ -27,8 +27,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 This package includes a dynamic shared object (DSO) that adds RRDtool
 bindings to the PHP HTML-embedded scripting language.
 
-%description -l pl
-Modu≥ RRDtool dla PHP.
+%description -l pl.UTF-8
+Modu≈Ç RRDtool dla PHP.
 
 %prep
 %setup -q -n rrdtool-%{version}
