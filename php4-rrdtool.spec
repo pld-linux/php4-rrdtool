@@ -2,7 +2,7 @@
 %define		_sysconfdir	/etc/php4
 %define		extensionsdir	%(php-config --extension-dir 2>/dev/null)
 Summary:	RRDtool PHP module
-Summary(pl.UTF-8):   Moduł PHP RRDtool
+Summary(pl.UTF-8):	Moduł PHP RRDtool
 Name:		php4-rrdtool
 Version:	1.0.50
 Release:	7
