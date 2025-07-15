@@ -32,8 +32,8 @@ Moduł RRDtool dla PHP.
 
 %prep
 %setup -q -n rrdtool-%{version}
-%patch0 -p0
-%patch1 -p1
+%patch -P0 -p0
+%patch -P1 -p1
 
 %build
 cd contrib/php4
